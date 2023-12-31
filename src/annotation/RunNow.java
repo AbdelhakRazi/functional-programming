@@ -9,9 +9,9 @@ import java.lang.annotation.Retention;
 @Target(ElementType.METHOD)
 public @interface RunNow {
     // add parameters
-    // note  : parameters can't be any tyoe, it can only be primitive type, class type or an array of those
+    // note  : parameters can't be any type, it can only be primitive type, class type or an array of those
     // can add default value
     int times() default 1;
-    //Cat cats(); this means that return type is Cat so instead we use the following
+    //Cat cats(); this means that return type is Cat, so instead we use the following
     Class<Cat> cats() default Cat.class;
 }
